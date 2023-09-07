@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -67,7 +67,7 @@ namespace Homework_09_07_2023
             Console.WriteLine("The number of days the user is alive is:"+ the_number_of_days_the_user_is_alive);
             int the_number_of_hours_the_user_is_alive = (users_age * 365 * 24);
             Console.WriteLine("The number of hours the user is alive is:" + the_number_of_hours_the_user_is_alive);
-            int the_number_of_seconds_the_user_is_alive = (users_age * 365 * 24 * 60 * 60);
+            long the_number_of_seconds_the_user_is_alive = (users_age * 365 * 24 * 60 * 60);
             Console.WriteLine("The number of seconds the user is alive is:" + the_number_of_seconds_the_user_is_alive);
             // Answer to the fifteenth question:
             /*ax+b=c*/
@@ -97,6 +97,16 @@ namespace Homework_09_07_2023
             else if (b == 0 && c == 0 && a == 0)
             {
                 Console.WriteLine("The solution is not defined.");
+            }
+            else if (b == 0 && c != 0 && a != 0)
+            {
+                x_res = c / a;
+                Console.WriteLine(x_res);
+            }
+            else if (b != 0 && c == 0 && a != 0)
+            {
+                x_res = -b / a;
+                Console.WriteLine(x_res);
             }
             else
             {
