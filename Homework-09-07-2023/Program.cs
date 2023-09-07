@@ -62,12 +62,12 @@ namespace Homework_09_07_2023
             Console.WriteLine("The employee's total salary in USD is:"+ the_total_salary_of_the_employee_in_usd);
             // Answer to the fourteenth question:
             Console.WriteLine("Please enter your age here please:");
-            int users_age = int.Parse(Console.ReadLine());
-            int the_number_of_days_the_user_is_alive = (users_age * 365);
-            Console.WriteLine("The number of days the user is alive is:"+ the_number_of_days_the_user_is_alive);
-            int the_number_of_hours_the_user_is_alive = (users_age * 365 * 24);
+            double users_age = double.Parse(Console.ReadLine());
+            double the_number_of_days_the_user_is_alive = (users_age * 365);
+            Console.WriteLine("The number of days the user is alive is:" + the_number_of_days_the_user_is_alive);
+            double the_number_of_hours_the_user_is_alive = (users_age * 365 * 24);
             Console.WriteLine("The number of hours the user is alive is:" + the_number_of_hours_the_user_is_alive);
-            long the_number_of_seconds_the_user_is_alive = (users_age * 365 * 24 * 60 * 60);
+            ulong the_number_of_seconds_the_user_is_alive = (ulong)(users_age * 365 * 24 * 60 * 60);
             Console.WriteLine("The number of seconds the user is alive is:" + the_number_of_seconds_the_user_is_alive);
             // Answer to the fifteenth question:
             /*ax+b=c*/
